@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#border{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#outer{
+    height: 60vh;
+    width: 40%;
+    background-color: rgb(198, 198, 198);
+    display: flex;
+    flex-direction: column;
+    /* flex-grow: 1; */
+    /* flex-grow:calc(15%,20%,65%); */
+}
+#header{
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: rgb(169, 225, 65);
+    margin: 5px;
+}
+
+/* #header span{
+    font-size: 70%;
+} */
+
+#display{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#display input{
+    height: 100%;
+    width: 100%;
+    margin: 5px;
+    outline: none;
+    border: none;
+    background-color: rgb(125, 211, 243);
+}
+
+
+#cal-kay{
+    width: auto;
+    height: 65%;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+}
+.key-row,.lest-key-row{
+    height: 20%;
+    display: flex;
+    /* margin: 5px; */
+}
+
+.key-row div{
+    width: 25%;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(233, 187, 233);
+    cursor: pointer;
+}
+#five-key{
+    background-color: rgb(157, 157, 157);
+}
+
+
+#key-zero,#key-point,#equal-key{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(233, 187, 233);
+    margin: 5px;
+    cursor: pointer;
+}
+
+#key-zero{
+    width: 52%;
+}
+#key-point{
+    width: 25%;
+}
+#equal-key{
+    width: 25%;
+}
+#sum-key,#subtraction-kay,#multiply-key,#division-key,#equal-key{
+    background-color: rgb(222, 129, 29);
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="border">
+        <div id="outer">
+            <header id="header"><span>CALCULATOR</span></header>
+            <div id="display"><input type="text" id="input-value" value=""></div>
+            <div id="cal-kay">
+                <div class="key-row">
+                    <div onclick="acFun()">AC</div>
+                    <div onclick="signFun()">+/-</div>
+                    <div onclick="percentFun()">%</div>
+                    <div id="division-key" onclick="divisionFun()">/</div>
+                </div>
+                <div class="key-row">
+                    <div onclick="numberFun(7)">7</div>
+                    <div onclick="numberFun(8)">8</div>
+                    <div onclick="numberFun(9)">9</div>
+                    <div id="multiply-key" onclick="multiplyFun()">*</div>
+                </div>
+                <div class="key-row">
+                    <div onclick="numberFun(4)">4</div>
+                    <div id="five-key" onclick="numberFun(5)">5</div>
+                    <div onclick="numberFun(6)">6</div>
+                    <div id="subtraction-kay" onclick="subtractionFun()">-</div>
+                </div>
+                <div class="key-row">
+                    <div onclick="numberFun(1)">1</div>
+                    <div onclick="numberFun(2)">2</div>
+                    <div onclick="numberFun(3)">3</div>
+                    <div id="sum-key" onclick="sumFun()">+</div>
+                </div>
+                <div class="lest-key-row">
+                    <div id="key-zero" onclick="numberFun(0)">0</div>
+                    <div id="key-point" onclick="numberFun('.')">.</div>
+                    <div id="equal-key" onclick="equalFun()">=</div>
+                </div>
+            </div>
+         </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
